@@ -1,0 +1,261 @@
+{
+  "site": {
+    "brand": "Sumba with Tinus",
+    "guideName": "Tinus",
+    "pageTitle": "Sumba with Tinus | Local guide and airport transfers in Sumba, Indonesia",
+    "metaDescription": "Airport transfers and trips in Sumba, Indonesia with local guide Tinus. Waterfalls, beaches, traditional villages and the Weekuri lagoon in West and East Sumba.",
+    "headline": "See Sumba with a local guide",
+    "intro": "Airport pickups in Tambolaka and Waingapu, and trips to waterfalls, beaches, hills and traditional villages across the island.",
+    "heroPhoto": {
+      "src": "images/village-street.jpg",
+      "alt": "A row of traditional Sumbanese houses with tall thatched roofs along a stone-paved village street"
+    },
+    "footerNote": "",
+    "credit": ""
+  },
+
+  "contact": {
+    "whatsapp": "",
+    "whatsappMessage": "Hello Tinus! I found your website and I would like to plan a trip in Sumba.",
+    "phone": "",
+    "email": "",
+    "instagram": "",
+    "facebook": "",
+    "tripadvisor": "",
+    "replyTime": ""
+  },
+
+  "servicesTitle": "Trips and transfers",
+  "servicesIntro": "Tell Tinus which places you want to see and he will plan the route with you.",
+  "services": [
+    {
+      "id": "transfers",
+      "title": "Airport transfers",
+      "summary": "A ride between the airport and your hotel, homestay or resort.",
+      "stops": ["Tambolaka Airport (TMC)", "Waingapu Airport (WGP)"],
+      "area": "",
+      "details": [
+        { "label": "Price", "value": "" },
+        { "label": "Included", "value": "" }
+      ]
+    },
+    {
+      "id": "west",
+      "title": "West Sumba trips",
+      "summary": "Choose your stops in the west of the island: waterfalls, traditional villages, beaches and the Weekuri lagoon.",
+      "stops": [],
+      "area": "west",
+      "details": [
+        { "label": "Price", "value": "" },
+        { "label": "Duration", "value": "" },
+        { "label": "Included", "value": "" }
+      ]
+    },
+    {
+      "id": "east",
+      "title": "East Sumba trips",
+      "summary": "Choose your stops in the east of the island: waterfalls, beaches and rolling hills.",
+      "stops": [],
+      "area": "east",
+      "details": [
+        { "label": "Price", "value": "" },
+        { "label": "Duration", "value": "" },
+        { "label": "Included", "value": "" }
+      ]
+    }
+  ],
+
+  "placesTitle": "Places to visit",
+  "placesIntro": "Every stop here is a suggestion. Mix places from the list, or ask Tinus about somewhere that is not on it.",
+  "placeGroups": [
+    {
+      "id": "villages",
+      "title": "Traditional villages",
+      "intro": "Tall thatched roofs, stone tombs and hand-woven ikat cloth. These villages are lived in, so it helps to visit with someone who can introduce you.",
+      "places": [
+        { "name": "Prai Ijing village", "area": "west", "note": "" },
+        { "name": "Tarung village", "area": "west", "note": "" },
+        { "name": "Waitabar village", "area": "west", "note": "" }
+      ],
+      "photos": [
+        {
+          "src": "images/village-roofs-tombs.jpg",
+          "alt": "Tall thatched roofs rising behind flat stone tombs in a traditional village",
+          "caption": "",
+          "focus": "50% 40%"
+        },
+        {
+          "src": "images/ikat-and-horns.jpg",
+          "alt": "A visitor looks at woven ikat cloths beside a wall of buffalo horns inside a traditional house",
+          "caption": "",
+          "focus": "70% 50%"
+        }
+      ]
+    },
+    {
+      "id": "waterfalls",
+      "title": "Waterfalls",
+      "intro": "Cool pools for swimming, some a short walk from the road and some a longer hike through forest.",
+      "places": [
+        { "name": "Wekacura waterfall", "area": "west", "note": "" },
+        { "name": "Lokomboro waterfall", "area": "west", "note": "" },
+        { "name": "Lapopu waterfall", "area": "west", "note": "A tall stepped waterfall, about 90 metres high, inside Manupeu Tanah Daru National Park." },
+        { "name": "Mata Yangu waterfall", "area": "west", "note": "Reached by a walk through forest, ending at a blue waterfall and a teal pool." },
+        { "name": "Tanggedu waterfall", "area": "east", "note": "Often called the Grand Canyon of East Sumba. About two hours from Waingapu, then a walk." },
+        { "name": "Waimarang waterfall", "area": "east", "note": "" }
+      ],
+      "photos": [
+        {
+          "src": "images/waterfall-teal-pool.jpg",
+          "alt": "A waterfall dropping into a turquoise pool surrounded by forest",
+          "caption": "",
+          "focus": "50% 50%"
+        },
+        {
+          "src": "images/waterfall-stairs.jpg",
+          "alt": "A waterfall falling from a cliff into a turquoise pool, with a wooden stairway leading down",
+          "caption": "",
+          "focus": "50% 40%"
+        },
+        {
+          "src": "images/waterfall-tiers.jpg",
+          "alt": "A small tiered waterfall flowing into a green pool",
+          "caption": "",
+          "focus": "50% 60%"
+        }
+      ]
+    },
+    {
+      "id": "lagoon",
+      "title": "Weekuri lagoon",
+      "intro": "Clear turquoise water held inside a ring of limestone rock, right beside the open sea.",
+      "places": [
+        { "name": "Weekuri lagoon", "area": "west", "note": "" }
+      ],
+      "photos": [
+        {
+          "src": "images/weekuri-lagoon-2.jpg",
+          "alt": "Turquoise lagoon edged by grey limestone rocks and green trees",
+          "caption": "",
+          "focus": "50% 50%"
+        },
+        {
+          "src": "images/weekuri-lagoon-1.jpg",
+          "alt": "The lagoon under a wide blue sky, seen from the rocks above",
+          "caption": "",
+          "focus": "50% 60%"
+        }
+      ]
+    },
+    {
+      "id": "beaches",
+      "title": "Beaches",
+      "intro": "White sand and blue water, with plenty of room to spread out.",
+      "places": [
+        { "name": "Watubella beach", "area": "west", "note": "" },
+        { "name": "Walakiri beach", "area": "east", "note": "A white sand beach that is popular at sunset." }
+      ],
+      "photos": [
+        {
+          "src": "images/beach-tree.jpg",
+          "alt": "Turquoise sea and white sand seen through a bare tree",
+          "caption": "",
+          "focus": "50% 40%"
+        },
+        {
+          "src": "images/beach-sand.jpg",
+          "alt": "A white sand beach with waves rolling in and rocks at the far end",
+          "caption": "",
+          "focus": "50% 50%"
+        }
+      ]
+    },
+    {
+      "id": "hills",
+      "title": "Hills and countryside",
+      "intro": "Rolling green hills and rice fields, best with a slow drive and a few photo stops.",
+      "places": [
+        { "name": "Warinding hills", "area": "east", "note": "" },
+        { "name": "Tana Rara hills", "area": "east", "note": "" }
+      ],
+      "photos": [
+        {
+          "src": "images/road-through-paddies.jpg",
+          "alt": "A quiet road beside bright green rice fields with hills in the distance",
+          "caption": "",
+          "focus": "50% 50%"
+        },
+        {
+          "src": "images/rice-terraces.jpg",
+          "alt": "Green rice terraces with trees and a stream",
+          "caption": "",
+          "focus": "50% 50%"
+        }
+      ]
+    }
+  ],
+
+  "about": {
+    "title": "About Tinus",
+    "photo": "",
+    "photoAlt": "Tinus, local guide in Sumba",
+    "text": "",
+    "facts": [
+      { "label": "Languages", "value": "" },
+      { "label": "Based in", "value": "" },
+      { "label": "Guiding since", "value": "" },
+      { "label": "Vehicle", "value": "" }
+    ]
+  },
+
+  "reviews": [],
+
+  "infoTitle": "Good to know",
+  "info": [
+    {
+      "title": "Best time to visit",
+      "text": "Waterfalls can be visited all year. The dry season, roughly May to October, is the most comfortable for roads and river crossings."
+    },
+    {
+      "title": "What to bring",
+      "text": "Swimwear, a towel, sandals or shoes with good grip, sun protection and some cash in rupiah for entrance fees and small purchases."
+    },
+    {
+      "title": "Visiting villages",
+      "text": "Ask before taking photos of people. Buying a piece of weaving is a good way to support the village."
+    },
+    {
+      "title": "Payment",
+      "text": ""
+    },
+    {
+      "title": "Changing or cancelling a booking",
+      "text": ""
+    }
+  ],
+  "infoPhoto": {
+    "src": "images/river-weir-rice.jpg",
+    "alt": "A river flowing under a footbridge beside green rice fields"
+  },
+
+  "contactTitle": "Plan your trip",
+  "contactIntro": "The easiest way to reach Tinus is a WhatsApp message.",
+  "steps": [
+    {
+      "title": "Send a message",
+      "text": "Tell Tinus your dates, which airport you arrive at and the places you would like to see."
+    },
+    {
+      "title": "Agree the plan",
+      "text": "He suggests a route and confirms the price."
+    },
+    {
+      "title": "Meet in Sumba",
+      "text": "Tinus meets you at the airport or your hotel and the trip begins."
+    }
+  ],
+  "contactPhoto": {
+    "src": "images/sunset-tidal-flats.jpg",
+    "alt": "Orange sunset over tidal flats and the sea"
+  }
+}
