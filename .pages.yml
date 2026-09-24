@@ -1,0 +1,304 @@
+media:
+  input: images
+  output: images
+  categories: [image]
+
+content:
+  - name: site
+    label: "Site content"
+    type: file
+    path: content.json
+    format: json
+    fields:
+      - name: site
+        label: "Header & hero"
+        type: object
+        fields:
+          - name: brand
+            label: "Business / site name"
+            type: string
+          - name: guideName
+            label: "Guide's first name"
+            type: string
+          - name: pageTitle
+            label: "Browser tab title"
+            type: string
+          - name: metaDescription
+            label: "Search engine description"
+            type: text
+          - name: headline
+            label: "Hero headline"
+            type: string
+          - name: intro
+            label: "Hero intro sentence"
+            type: text
+          - name: heroPhoto
+            label: "Hero photo"
+            type: object
+            fields:
+              - name: src
+                label: "Image"
+                type: image
+              - name: alt
+                label: "Description (for accessibility)"
+                type: string
+          - name: footerNote
+            label: "Footer note (optional)"
+            type: string
+            required: false
+
+      - name: contact
+        label: "Contact details"
+        type: object
+        fields:
+          - name: whatsapp
+            label: "WhatsApp number (with country code, digits only, e.g. 6281234567890)"
+            type: string
+            required: false
+          - name: whatsappMessage
+            label: "Pre-filled WhatsApp message"
+            type: text
+            required: false
+          - name: phone
+            label: "Phone number (optional)"
+            type: string
+            required: false
+          - name: email
+            label: "Email (optional)"
+            type: string
+            required: false
+          - name: instagram
+            label: "Instagram link (optional)"
+            type: string
+            required: false
+          - name: facebook
+            label: "Facebook link (optional)"
+            type: string
+            required: false
+          - name: tripadvisor
+            label: "Tripadvisor link (optional)"
+            type: string
+            required: false
+          - name: replyTime
+            label: "Typical reply time (optional, e.g. 'Usually replies within a day')"
+            type: string
+            required: false
+
+      - name: servicesTitle
+        label: "Trips section heading"
+        type: string
+      - name: servicesIntro
+        label: "Trips section intro"
+        type: text
+      - name: services
+        label: "Trips & transfers"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: id
+            label: "Internal ID (leave as is)"
+            type: string
+          - name: title
+            label: "Trip name"
+            type: string
+          - name: summary
+            label: "Short description"
+            type: text
+          - name: stops
+            label: "Stops / included places"
+            type: string
+            list: true
+            required: false
+          - name: area
+            label: "Area"
+            type: select
+            required: false
+            options:
+              values: ["", west, east]
+          - name: details
+            label: "Details (price, duration, etc.)"
+            type: object
+            list: true
+            fields:
+              - name: label
+                label: "Label"
+                type: string
+              - name: value
+                label: "Value (leave blank to show 'to be added')"
+                type: string
+                required: false
+
+      - name: placesTitle
+        label: "Places section heading"
+        type: string
+      - name: placesIntro
+        label: "Places section intro"
+        type: text
+      - name: placeGroups
+        label: "Place categories"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: id
+            label: "Internal ID (leave as is)"
+            type: string
+          - name: title
+            label: "Category name"
+            type: string
+          - name: intro
+            label: "Short intro"
+            type: text
+          - name: places
+            label: "Places in this category"
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: name
+                label: "Name"
+                type: string
+              - name: area
+                label: "Area"
+                type: select
+                required: false
+                options:
+                  values: ["", west, east]
+              - name: note
+                label: "Short note (optional)"
+                type: text
+                required: false
+          - name: photos
+            label: "Photos"
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{alt}"
+            fields:
+              - name: src
+                label: "Image"
+                type: image
+              - name: alt
+                label: "Description (for accessibility)"
+                type: string
+              - name: caption
+                label: "Caption shown on photo (optional)"
+                type: string
+                required: false
+              - name: focus
+                label: "Focus point (advanced, leave as is)"
+                type: string
+                required: false
+
+      - name: about
+        label: "About the guide"
+        type: object
+        fields:
+          - name: title
+            label: "Section heading"
+            type: string
+          - name: photo
+            label: "Photo of the guide"
+            type: image
+            required: false
+          - name: photoAlt
+            label: "Photo description"
+            type: string
+            required: false
+          - name: text
+            label: "About text"
+            type: text
+            required: false
+          - name: facts
+            label: "Quick facts"
+            type: object
+            list: true
+            fields:
+              - name: label
+                label: "Label (e.g. Languages, Based in)"
+                type: string
+              - name: value
+                label: "Value (leave blank to hide)"
+                type: string
+                required: false
+
+      - name: reviews
+        label: "Guest reviews (optional)"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        required: false
+        fields:
+          - name: quote
+            label: "Quote"
+            type: text
+          - name: name
+            label: "Guest name"
+            type: string
+
+      - name: infoTitle
+        label: "'Good to know' heading"
+        type: string
+      - name: info
+        label: "Good-to-know items"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: "Title"
+            type: string
+          - name: text
+            label: "Text (leave blank to hide this item)"
+            type: text
+            required: false
+      - name: infoPhoto
+        label: "'Good to know' photo"
+        type: object
+        fields:
+          - name: src
+            label: "Image"
+            type: image
+          - name: alt
+            label: "Description"
+            type: string
+
+      - name: contactTitle
+        label: "Contact section heading"
+        type: string
+      - name: contactIntro
+        label: "Contact section intro"
+        type: text
+      - name: steps
+        label: "How booking works (steps)"
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: "Step title"
+            type: string
+          - name: text
+            label: "Step description"
+            type: text
+      - name: contactPhoto
+        label: "Contact section background photo"
+        type: object
+        fields:
+          - name: src
+            label: "Image"
+            type: image
+          - name: alt
+            label: "Description"
+            type: string
